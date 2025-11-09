@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:publisher": "node publisher.js",
+    "start:subscriber": "node subscriber.js"
   },
   "keywords": [],
   "author": "",

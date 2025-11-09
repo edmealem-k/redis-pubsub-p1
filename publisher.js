@@ -1,7 +1,8 @@
 const Redis = require("ioredis");
 
-const pub = new Redis("redis://127.0.0.1:6377");
-const sub = new Redis("redis://127.0.0.1:6377");
+const REDIS_URL = process.env.REDIS_URL || "redis://127.0.0.1:6377";
+const pub = new Redis(REDIS_URL);
+const sub = new Redis(REDIS_URL);
 
 async function run() {
   let n = 0;
